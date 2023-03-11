@@ -5,17 +5,18 @@
 
 main {
   display: grid;
+  grid-template-columns: 15% auto;
+  grid-template-rows: 30% auto 15%;
   grid-template-areas:
-    "header header header header "
-    "menu products products products "
-    "footer footer footer footer ";
+    "header header"
+    "menu products"
+    "footer footer";
   background-color: #e1e8ef;
   font-family: "Roboto", sans-serif;
 }
 
 header {
   grid-area: header;
-  height: 300px;
   background-image: url(../img/banner1.jpg);
   background-position: center;
   background-size: cover;
